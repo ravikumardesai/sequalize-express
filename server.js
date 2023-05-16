@@ -16,6 +16,8 @@ app.use(bodyParser.json())
 app.listen(5001,(req,res)=>{
     console.log(`server start at port 5001`);
 })
+// use for the file access to public
+app.use('/public/profiles', express.static(__dirname + '/public/profiles'));
 
 // registrations
 app.use("/api",require("./route/userRoutes"))

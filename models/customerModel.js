@@ -26,6 +26,10 @@ const Customer = sequelize.define(
       type: Sequelize.STRING,
       allowNull: false,
     },
+    profile:{
+      type:Sequelize.STRING,
+      allowNull:true
+    }
   },
   {
     defaultScope: {
